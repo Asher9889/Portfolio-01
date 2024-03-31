@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body, html{
+  width: 100%;
+  height: 100%;
+}
+.banner{
+  width: 100VW;
+  height: 100vh;
+  position: relative;
+  background-color: rgb(231, 225, 225);
+  transition: ease-in-out 0.5s;
+}
+.nav{
+  width: full;
+  height: 15vh;
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+}
+.logo{
+  font-size: 2vw;
+  margin: 1vw 0 0 6vw;
+  font-weight: 500;
+  text-decoration: none;
+  color: #000;
+}
+.logo span {
+  font-size: 4vw;
+  color: rgb(231, 153, 8);
+}
+.nav-right{
+  display: flex;
+  gap: 4vw; 
+}
+.nav-right li:nth-child(4){
+  margin-right: 8vw;
+}
+.nav-right li{
+  list-style: none;
+}
+.nav-right li a{
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  font-size: 1.6vw;
+}
+.content-box{
+  width: 100%;
+  height: 85%;
+  /* background-color: aqua; */
+  padding: 4vw 4vw 4vw 7vw;
+}
+.content{
+  width: 100%;
+  height: 100%;
+  /* background-color: aquamarine; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  
+}
+.content p:nth-child(1){
+  font-size: 7vw;
+ 
+  font-weight: 600;
+  
+}
+.content p:nth-child(1) span{
+  color: rgb(231, 153, 8);
+  
+}
+.content p:nth-child(2){
+  opacity: 0.8;
+  font-weight: 500;
+  font-size: 1.3vw;
+  
+}
+.content-button button:nth-child(1){
+  padding: 1vw 1.5vw ;
+  background: rgb(231, 153, 8);
+  border: none;
+  font-size: 1.2vw;
+  color: white;
+  font-weight: 600;
+  margin-left: 0.5vw;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.content-button button:nth-child(2){
+  padding: 1vw 1.5vw ;
+  border-radius: 5px;
+  border: none;
+  font-size: 1.2vw;
+  color: #000;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-left: 5vw;
+  background-color: transparent;
+  cursor: pointer;
+}
+.day-night{
+  position: absolute;
+  background-color: rgb(213, 207, 207);
+  bottom: 0;
+  left: 50%;
+  font-size: 2vw;
+  width: 4vw;
+  height: 4vw;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+}
+.day-night i:nth-child(1){
+  display: none;
+}
+
+.night-mode{
+  background-color: #000;
+  color: white;
+
+}
+
+.night-mode .day-night i:nth-child(2){
+  display: none;
+}
+.night-mode .day-night i:nth-child(1){
+  display: block;
+}
+.night-mode .logo, .night-mode .nav-right li a, .night-mode .content-button button:nth-child(2){
+  color: white;
+}
+.night-mode .day-night{
+  background-color: #000;
+}
+
+
+
+
+
+
