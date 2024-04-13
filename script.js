@@ -25,4 +25,6 @@ if(localStorage.getItem("theme") == "light"){
   banner.classList.remove("night-mode")
 }else if(localStorage.getItem("theme") != "light"){
   banner.classList.add("night-mode")
+}else{
+  localStorage.setItem("theme", "light")
 }
